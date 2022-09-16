@@ -42,3 +42,7 @@
     right: -10px;
     top: -10px;
 }
+
+.deletar:active {
+    height: 27px;
+}
