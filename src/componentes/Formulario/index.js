@@ -50,6 +50,22 @@ const Formulario = ({aoCadastrar, times}) => {
                     aoAlterado={valor => setTime(valor)}/>
                 <Botao texto='Criar card' />
             </form>
+            <form className="formulario" onSubmit={aoSubmeter}>
+                <h2>Preencha os dados para criar um novo time.</h2>
+                <CampoTexto
+                    obrigatorio={true}
+                    label='Nome'
+                    placeholder='Digite seu nome '
+                    valor={nome}
+                    aoAlterado={valor => setNome(valor)}/>
+                <CampoTexto
+                    obrigatorio={true}
+                    label='Cargo' 
+                    placeholder='Digite seu cargo '
+                    valor={cargo}
+                    aoAlterado={valor => setCargo(valor)}/>
+                <Botao texto='Criar card' />
+            </form>
         </section>
     )
 }

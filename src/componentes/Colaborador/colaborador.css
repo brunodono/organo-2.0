@@ -1,6 +1,7 @@
 .colaborador {
     width: 280px;
     position: relative;
+    margin: 20px 0;
 }
 
 .colaborador .cabecalho {
@@ -41,6 +42,7 @@
     position: absolute;
     right: -10px;
     top: -10px;
+    cursor: pointer;
 }
 
 .deletar:active {
