@@ -18,10 +18,11 @@
     font-size: 32px;
 }
 
-@media (max-width:600px) {
-    .formulario-container .formulario {
-        padding: 5px 6px;
-
+@media (max-width:900px) {
+    .formulario-container {
+        display: block;
+        gap: 20px;
+    
     }
     .formulario-container .formulario h2 {
     font-size: 23px;
