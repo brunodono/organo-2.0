@@ -48,3 +48,8 @@
 .deletar:active {
     height: 27px;
 }
+
+.favoritar {
+    margin-top: 20px;
+    cursor: pointer;
+}

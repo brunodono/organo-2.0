@@ -68,7 +68,7 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                     obrigatorio
                     type='color'
                     label='Cor do time' 
-                    placeholder='Digite a cor do time. ex:#FFFFFF '
+                    placeholder='Escolha a cor do time.'
                     valor={corTime}
                     aoAlterado={valor => setCorTime(valor)}
                 />
