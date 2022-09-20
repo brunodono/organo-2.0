@@ -15,6 +15,10 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
 
     const aoSubmeter = (evento) => {
         evento.preventDefault()
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
         console.log('form enviado', nome, cargo, imagem, time )
         aoCadastrar({
             nome,
@@ -43,6 +47,7 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                 <Campo 
                     label='Imagem' 
                     placeholder='Informe o endereço da imagem '
+                    valor={imagem}
                     aoAlterado={valor => setImagem(valor)}/>
                 <ListaSuspensa 
                     obrigatorio={true}
@@ -52,8 +57,11 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                     aoAlterado={valor => setTime(valor)}/>
                 <Botao texto='Criar card' />
             </form>
+
             <form className="formulario" onSubmit={(evento)=> {
                 evento.preventDefault();
+                setNomeTime('')
+                setCorTime('')
                 cadastrarTime({ nome: nomeTime, cor:corTime })
             }}>
                 <h2>Preencha os dados para criar um novo time.</h2>
